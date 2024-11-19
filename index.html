@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Auction House</h1>
+        </header>
+        
+        <div class="auction-item">
+            <h2>Auction Item: Vintage Watch</h2>
+            <img src="watch.jpg" alt="Vintage Watch">
+            <p>Description: A rare vintage watch in good condition.</p>
+            <p>Current Bid: $<span id="current-bid">100</span></p>
+            
+            <form id="bid-form">
+                <label for="bid-amount">Your Bid ($):</label>
+                <input type="number" id="bid-amount" min="1" required>
+                <button type="submit">Place Bid</button>
+            </form>
+        </div>
+        
+        <div class="bidding-history">
+            <h3>Bidding History:</h3>
+            <ul id="bidding-history-list">
+                <!-- Previous bids will appear here -->
+            </ul>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Auction House</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
